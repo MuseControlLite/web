@@ -34,16 +34,14 @@ td {
     </div>
 
     <p style="font-size: 1.3em; margin-bottom: 0;">
+      <a href="https://fundwotsai2001.github.io/mywebsite/"> Fang-Duo Tsai<sup>1,2*</sup> </a>&nbsp;
       <a href="https://slseanwu.github.io/"> Shih-Lun Wu<sup>1,2*</sup> </a>&nbsp;
-      <a href="https://chrisdonahue.com/">Chris Donahue<sup>1</sup> </a>&nbsp;
-      <a href="https://sites.google.com/view/shinjiwatanabe"> Shinji Watanabe<sup>1</sup></a> &nbsp;
-      <a href="https://njb.github.io/"> Nicholas J. Bryan<sup>2</sup></a> &nbsp;
     </p>
-    <p style="margin-top: 0;">
-        <sup>1</sup>School of Computer Science, Carnegie Mellon University<br>
+    <!-- <p style="margin-top: 0;">
+        <sup>1</sup>National Taiwan University<br>
         <sup>2</sup>Adobe Research <br>
         <sup>*</sup>Work done during an internship at Adobe Research <br>
-    </p>
+    </p> -->
 
       <div class="m-5">
           <a class="btn btn-outline-dark" href="https://arxiv.org/abs/2311.07069" type="button"><i
@@ -72,23 +70,21 @@ td {
                   <h1 class="text-justify">Abstract</h1>
                   <hr>
                   <p class="pr-5 pl-5 text-justify">
-                    Text-to-music generation models are now capable of generating high-quality music audio in broad styles. 
-                    However, text control is primarily suitable for the manipulation of global musical attributes like 
-                    genre, mood, and tempo, and is less suitable for precise control over time-varying attributes 
-                    such as the positions of beats in time or the changing dynamics of the music. We propose MuseControlLite,
-                    a diffusion-based music generation model that offers multiple precise, time-varying controls over 
-                    generated audio. To imbue text-to-music models with time-varying control, we propose an approach 
-                    analogous to pixel-wise control of the image-domain ControlNet method. Specifically, we extract 
-                    controls from training audio yielding paired data, and fine-tune a diffusion-based conditional generative 
-                    model over audio spectrograms given melody, dynamics, and rhythm controls. While the image-domain 
-                    Uni-ControlNet method already allows generation with any subset of controls, we devise a new strategy
-                    to allow creators to input controls that are only partially specified in time. We evaluate both on 
-                    controls extracted from audio and controls we expect creators to provide, demonstrating that we can 
-                    generate realistic music that corresponds to control inputs in both settings. While few comparable 
-                    music generation models exist, we benchmark against MusicGen, a recent model that accepts text and 
-                    melody input, and show that our model generates music that is 49% more faithful to input melodies 
-                    despite having 35x fewer parameters, training on 11x less data, and enabling two additional forms 
-                    of time-varying control. 
+                    We propose MuseControlLite, a lightweight mechanism with only 85M trainable parameters to finetune text-to-music generation models to gain precise controllability over various time-varying conditions of musical attributes and from reference
+                    audio signals. The key finding is that positional
+                    embeddings, which have been seldom used in the
+                    conditioner of text-to-music generation models
+                    for text conditions, are critical when the condition
+                    of interest is a function of time. Taking melody
+                    control as an example, our experiment shows that
+                    the simple idea of adding rotary positional embeddings to the so-called decoupled cross-attention
+                    layers greatly improves the control accuracy from
+                    56.6% to 70.9%, with 6.75 times fewer trainable parameters than state-of-the-art fine-tuning
+                    mechanisms, using the same pre-trained diffusion
+                    Transformer model of Stable Audio Open. We
+                    provide evaluation of various musical attribute
+                    controls, audio inpainting, and audio outpainting,
+                    demonstrating improved controllability over and Stable Audio Open ControlNet with lower cost of fine-tuning.
                   </p>
                 </div><br>
 
@@ -101,11 +97,11 @@ td {
         <code>
         @article{Wu2023MusicControlNet,
             title={MuseControlLite: Multiple Time-varying Controls for Music Generation}, 
-            author={Wu, Shih-Lun and Donahue, Chris and Watanabe, Shinji and Bryan, Nicholas J.},
+            <!-- author={Wu, Shih-Lun and Donahue, Chris and Watanabe, Shinji and Bryan, Nicholas J.},
             year={2023},
             eprint={TBD},
             archivePrefix={arXiv},
-            primaryClass={cs.SD}
+            primaryClass={cs.SD} -->
         }</code>
                   </pre>
                   </div>

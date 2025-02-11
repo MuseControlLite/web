@@ -1,0 +1,65 @@
+{
+    "config": {
+        "condition_type": [
+            "audio",
+            "melody"
+        ],
+        "meta_data_path": "/data/home/fundwotsai/Music-Controlnet-light/SDD_no_singer_mine_con_50.json",
+        "audio_data_dir": "/data/home/fundwotsai/Music-Controlnet-light/Jamendo/segments_no_vocals",
+        "output_dir": "/data/home/fundwotsai/Music-Controlnet-light/for_demo_page/inpainting",
+        "transformer_ckpt": "/data/home/fundwotsai/Music-Controlnet-light/checkpoint_recently/checkpoint-21000_partial_con/model_3.safetensors",
+        "audio_ckpt": "/data/home/fundwotsai/Music-Controlnet-light/checkpoint_recently/checkpoint-24500_audio_infilling/model.safetensors",
+        "extractor_ckpt": {
+            "dynamics": "/data/home/fundwotsai/Music-Controlnet-light/checkpoint_recently/checkpoint-21000_partial_con/model.safetensors",
+            "melody": "/data/home/fundwotsai/Music-Controlnet-light/checkpoint_recently/checkpoint-21000_partial_con/model_2.safetensors",
+            "rhythm": "/data/home/fundwotsai/Music-Controlnet-light/checkpoint_recently/checkpoint-21000_partial_con/model_1.safetensors"
+        },
+        "GPU_id": "0",
+        "train_batch_size": 8,
+        "learning_rate": 0.0001,
+        "attn_processor_type": "rotary_double",
+        "gradient_accumulation_steps": 16,
+        "max_train_steps": 1000000,
+        "num_train_epochs": 20,
+        "dataloader_num_workers": 4,
+        "mixed_precision": "fp16",
+        "apadapter": true,
+        "lr_scheduler": "cosine",
+        "audio_pooling_rate": 1,
+        "validation_num": 1000,
+        "test_num": 50,
+        "ap_scale": 1.0,
+        "guidance_scale_text": 7.0,
+        "guidance_scale_con": 2.5,
+        "guidance_scale_audio": 1.0,
+        "generated_type": "demo",
+        "denoise_step": 100,
+        "log_first": false,
+        "sigma_min": 0.002,
+        "sigma_max": 80,
+        "weight_dtype": "fp16",
+        "negative_text_prompt": "Low quality",
+        "mask_start_seconds": 5,
+        "mask_end_seconds": 25,
+        "no_text": false,
+        "audio_files": [
+            "/data/home/fundwotsai/Music-Controlnet-light/Jamendo/segments_no_vocals/09/809/segment_0.mp3",
+            "/data/home/fundwotsai/Music-Controlnet-light/Jamendo/segments_no_vocals/04/1104/segment_1.mp3",
+            "/data/home/fundwotsai/Music-Controlnet-light/Jamendo/segments_no_vocals/76/776/segment_1.mp3",
+            "/data/home/fundwotsai/Music-Controlnet-light/Jamendo/segments_no_vocals/03/1103/segment_2.mp3",
+            "/data/home/fundwotsai/Music-Controlnet-light/Jamendo/segments_no_vocals/08/1108/segment_4.mp3",
+            "/data/home/fundwotsai/Music-Controlnet-light/Jamendo/segments_no_vocals/08/6008/segment_1.mp3"
+        ],
+        "text": [
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+        ]
+    },
+    "score_dynamics": 0.4204379204788071,
+    "score_rhythm": 0.802470934939603,
+    "score_melody": 0.6344554072354421
+}

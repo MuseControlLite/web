@@ -1,0 +1,64 @@
+{
+    "config": {
+        "condition_type": [
+            "dynamics"
+        ],
+        "meta_data_path": "/data/home/fundwotsai/Music-Controlnet-light/SDD_no_singer_mine_con_50.json",
+        "audio_data_dir": "/data/home/fundwotsai/Music-Controlnet-light/Jamendo/segments_no_vocals",
+        "output_dir": "/data/home/fundwotsai/Music-Controlnet-light/for_demo_page/melody",
+        "transformer_ckpt": "/data/home/fundwotsai/Music-Controlnet-light/checkpoint_recently/checkpoint-21000_partial_con/model_3.safetensors",
+        "audio_ckpt": "/data/home/fundwotsai/Music-Controlnet-light/checkpoint_recently/checkpoint-24500_audio_infilling/model.safetensors",
+        "extractor_ckpt": {
+            "dynamics": "/data/home/fundwotsai/Music-Controlnet-light/checkpoint_recently/checkpoint-21000_partial_con/model.safetensors",
+            "melody": "/data/home/fundwotsai/Music-Controlnet-light/checkpoint_recently/checkpoint-21000_partial_con/model_2.safetensors",
+            "rhythm": "/data/home/fundwotsai/Music-Controlnet-light/checkpoint_recently/checkpoint-21000_partial_con/model_1.safetensors"
+        },
+        "GPU_id": "0",
+        "train_batch_size": 8,
+        "learning_rate": 0.0001,
+        "attn_processor_type": "rotary",
+        "gradient_accumulation_steps": 16,
+        "max_train_steps": 1000000,
+        "num_train_epochs": 20,
+        "dataloader_num_workers": 4,
+        "mixed_precision": "fp16",
+        "apadapter": true,
+        "lr_scheduler": "cosine",
+        "audio_pooling_rate": 1,
+        "validation_num": 1000,
+        "test_num": 50,
+        "ap_scale": 1.0,
+        "guidance_scale_text": 7.0,
+        "guidance_scale_con": 2.0,
+        "guidance_scale_audio": 1.0,
+        "generated_type": "demo",
+        "denoise_step": 100,
+        "log_first": false,
+        "sigma_min": 0.3,
+        "sigma_max": 500,
+        "weight_dtype": "fp16",
+        "negative_text_prompt": "Low quality",
+        "mask_start_seconds": 15,
+        "mask_end_seconds": 30,
+        "no_text": false,
+        "audio_files": [
+            "/data/home/fundwotsai/Music-Controlnet-light/for_demo_audio_source_30s/Beethoven - Symphony No. 5 in C Minor (1)_part1.wav",
+            "/data/home/fundwotsai/Music-Controlnet-light/for_demo_melody_30s/\u7406\u67e5\u2027\u514b\u840a\u5fb7\u66fc Richard Clayderman \u5922\u4e2d\u7684\u5a5a\u79ae Mariage d'amour \u92fc\u7434\u6559\u5b78 Synthesia \u7434\u8b5c_part1.wav",
+            "/data/home/fundwotsai/Music-Controlnet-light/for_demo_audio_source_30s/Eine Kleine Nachtmusik - Mozart_part1.wav",
+            "/data/home/fundwotsai/Music-Controlnet-light/for_demo_melody_30s/\u8c9d\u591a\u82ac Ludwig van Beethoven \u6b61\u6a02\u980c Ode an die Freude \u5feb\u6a02\u980c \u92fc\u7434\u6559\u5b78 Synthesia \u7434\u8b5c \u92fc\u7434\u4f34\u594f_part2.wav",
+            "/data/home/fundwotsai/Music-Controlnet-light/for_demo_audio_source_30s/Vivaldi\uff1a The Four Seasons (Orquesta Reino de Arag\u00f3n)_part2.wav",
+            "/data/home/fundwotsai/Music-Controlnet-light/for_demo_melody_30s/\u8056\u8a95\u6b4c\u66f2 Jingle Bells \u8056\u8a95\u9234\u8072 \u92fc\u7434\u6559\u5b78 Synthesia \u7434\u8b5c_part1.wav"
+        ],
+        "text": [
+            "A grand piano playing a heartfelt ballad in a world-class recording studio with pristine acoustics.",
+            "A soft Rhodes electric piano playing jazz chords in a dimly lit, acoustically treated jazz lounge.",
+            "A cello quartet playing harmonized legato notes in a perfectly treated chamber music studio.",
+            "A folk harp cascading beautiful arpeggios inside a high-ceiling concert venue with warm acoustics.",
+            "A jazz guitar playing silky smooth chords in a dimly lit jazz club with perfectly placed microphones.",
+            "A xylophone ringing brightly inside a top-tier music conservatory rehearsal room."
+        ]
+    },
+    "score_dynamics": 0.8825489493796459,
+    "score_rhythm": 0.15306622281844892,
+    "score_melody": 0.08897703818369453
+}

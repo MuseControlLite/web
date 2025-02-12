@@ -105,6 +105,22 @@
           
             <div class="section text-justify">
                 <h1>Examples</h1>
+                <body>
+                    <p>
+                        For audio inpainting, we apply a mask from <strong>5s to 25s</strong> within the original 30-second audio:
+                    </p>
+                    <ol>
+                        <li>
+                            <strong>Unconditional inpainting:</strong> The model uses only the unmasked segment of the audio as a condition, without any text or musical attribute conditions.
+                        </li>
+                        <li>
+                            <strong>Inpainting with musical attribute condition:</strong> The condition is masked wherever the audio is unmasked, ensuring that the musical attribute condition serves as a guide for inpainting.
+                        </li>
+                    </ol>
+                    <p>
+                        The same procedure applies to audio outpainting, except the audio is masked from <strong>10s to 30s</strong>.
+                    </p>
+                </body>
                 <table class="table table-sum text-center" style="vertical-align; middle;">
                     <tbody>
                         <!-- Audio Inpainting -->

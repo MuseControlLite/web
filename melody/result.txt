@@ -1,0 +1,58 @@
+{
+    "config": {
+        "condition_type": [
+            "melody"
+        ],
+        "meta_data_path": "/data/home/fundwotsai/Music-Controlnet-light/SDD_no_singer_mine_con_50.json",
+        "audio_data_dir": "/data/home/fundwotsai/Music-Controlnet-light/Jamendo/segments_no_vocals",
+        "output_dir": "/data/home/fundwotsai/Music-Controlnet-light/for_demo_page/melody_new",
+        "transformer_ckpt": "/data/home/fundwotsai/Music-Controlnet-light/checkpoint_recently/checkpoint-21000_partial_con/model_3.safetensors",
+        "audio_ckpt": "/data/home/fundwotsai/Music-Controlnet-light/checkpoint_recently/checkpoint-24500_audio_infilling/model.safetensors",
+        "extractor_ckpt": {
+            "dynamics": "/data/home/fundwotsai/Music-Controlnet-light/checkpoint_recently/checkpoint-21000_partial_con/model.safetensors",
+            "melody": "/data/home/fundwotsai/Music-Controlnet-light/checkpoint_recently/checkpoint-21000_partial_con/model_2.safetensors",
+            "rhythm": "/data/home/fundwotsai/Music-Controlnet-light/checkpoint_recently/checkpoint-21000_partial_con/model_1.safetensors"
+        },
+        "GPU_id": "0",
+        "train_batch_size": 8,
+        "learning_rate": 0.0001,
+        "attn_processor_type": "rotary",
+        "gradient_accumulation_steps": 16,
+        "max_train_steps": 1000000,
+        "num_train_epochs": 20,
+        "dataloader_num_workers": 4,
+        "mixed_precision": "fp16",
+        "apadapter": true,
+        "lr_scheduler": "cosine",
+        "audio_pooling_rate": 1,
+        "validation_num": 1000,
+        "test_num": 50,
+        "ap_scale": 1.0,
+        "guidance_scale_text": 7.0,
+        "guidance_scale_con": 1.5,
+        "guidance_scale_audio": 1.0,
+        "generated_type": "demo",
+        "denoise_step": 100,
+        "log_first": false,
+        "sigma_min": 0.002,
+        "sigma_max": 80,
+        "weight_dtype": "fp16",
+        "negative_text_prompt": "Low quality",
+        "mask_start_seconds": 10,
+        "mask_end_seconds": 30,
+        "no_text": false,
+        "audio_files": [
+            "/data/home/fundwotsai/Music-Controlnet-light/for_demo_melody_30s/Canon_in_D_part1.mp3",
+            "/data/home/fundwotsai/Music-Controlnet-light/for_demo_melody_30s/Canon_in_D_part8.mp3",
+            "/data/home/fundwotsai/Music-Controlnet-light/for_demo_melody_30s/original_1_6_part1.mp3"
+        ],
+        "text": [
+            "Electrical guitar solo, smoothly.",
+            "A cinematic orchestral soundtrack with swelling strings and dramatic percussion.",
+            "jazz band, high quality."
+        ]
+    },
+    "score_dynamics": -0.07191099434122075,
+    "score_rhythm": 0.8555555555555555,
+    "score_melody": 0.77218782249742
+}

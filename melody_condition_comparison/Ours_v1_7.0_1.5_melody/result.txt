@@ -1,0 +1,115 @@
+{
+    "config": {
+        "condition_type": [
+            "melody"
+        ],
+        "meta_data_path": "/data/home/fundwotsai/Music-Controlnet-light/SDD_no_singer_mine_con_50.json",
+        "audio_data_dir": "/data/home/fundwotsai/Music-Controlnet-light/Jamendo/segments_no_vocals",
+        "output_dir": "/home/fundwotsai/Music-Controlnet-light/Ours_test_index",
+        "transformer_ckpt": "/home/fundwotsai/Music-Controlnet-light/checkpoint_recently/stable_audio_melody/checkpoint-37000/model_1.safetensors",
+        "audio_ckpt": "/data/home/fundwotsai/Music-Controlnet-light/checkpoint_recently/checkpoint-24500_audio_infilling/model.safetensors",
+        "extractor_ckpt": {
+            "melody": "/home/fundwotsai/Music-Controlnet-light/checkpoint_recently/stable_audio_melody/checkpoint-37000/model.safetensors"
+        },
+        "GPU_id": "0",
+        "train_batch_size": 8,
+        "learning_rate": 0.0001,
+        "attn_processor_type": "rotary",
+        "gradient_accumulation_steps": 16,
+        "max_train_steps": 1000000,
+        "num_train_epochs": 20,
+        "dataloader_num_workers": 4,
+        "apadapter": true,
+        "lr_scheduler": "cosine",
+        "audio_pooling_rate": 1,
+        "validation_num": 1000,
+        "test_num": 50,
+        "ap_scale": 1.0,
+        "guidance_scale_text": 7.0,
+        "guidance_scale_con": 1.5,
+        "guidance_scale_audio": 2.5,
+        "generated_type": "demo",
+        "denoise_step": 250,
+        "log_first": false,
+        "sigma_min": 0.3,
+        "sigma_max": 500,
+        "weight_dtype": "fp32",
+        "negative_text_prompt": "",
+        "mask_start_seconds": 15,
+        "mask_end_seconds": 15,
+        "condition_starts": 10,
+        "no_text": false,
+        "audio_files": [
+            "/home/fundwotsai/Music-Controlnet-light/melody_condition_audio/49_piano.mp3",
+            "/home/fundwotsai/Music-Controlnet-light/melody_condition_audio/49_piano.mp3",
+            "/home/fundwotsai/Music-Controlnet-light/melody_condition_audio/49_piano.mp3",
+            "/home/fundwotsai/Music-Controlnet-light/melody_condition_audio/322_piano.mp3",
+            "/home/fundwotsai/Music-Controlnet-light/melody_condition_audio/322_piano.mp3",
+            "/home/fundwotsai/Music-Controlnet-light/melody_condition_audio/322_piano.mp3",
+            "/home/fundwotsai/Music-Controlnet-light/melody_condition_audio/610_bass.mp3",
+            "/home/fundwotsai/Music-Controlnet-light/melody_condition_audio/610_bass.mp3",
+            "/home/fundwotsai/Music-Controlnet-light/melody_condition_audio/785_piano.mp3",
+            "/home/fundwotsai/Music-Controlnet-light/melody_condition_audio/785_piano.mp3",
+            "/home/fundwotsai/Music-Controlnet-light/melody_condition_audio/933_string.mp3",
+            "/home/fundwotsai/Music-Controlnet-light/melody_condition_audio/933_string.mp3",
+            "/home/fundwotsai/Music-Controlnet-light/melody_condition_audio/1143013.mp3",
+            "/home/fundwotsai/Music-Controlnet-light/melody_condition_audio/1143013.mp3",
+            "/home/fundwotsai/Music-Controlnet-light/melody_condition_audio/57_jazz.mp3",
+            "/home/fundwotsai/Music-Controlnet-light/melody_condition_audio/703_mideast.mp3"
+        ],
+        "audio_files_2": [
+            "/home/fundwotsai/Music-Controlnet-light/melody_condition_audio/57.wav"
+        ],
+        "text": [
+            [
+                "A heartfelt, warm acoustic guitar performance, evoking a sense of tenderness and deep emotion, with a melody that truly resonates and touches the heart."
+            ],
+            [
+                "A vibrant MIDI electronic composition with a hopeful and optimistic vibe."
+            ],
+            [
+                "This track composed of electronic instruments gives a sense of opening and clearness."
+            ],
+            [
+                "This track composed of electronic instruments gives a sense of opening and clearness."
+            ],
+            [
+                "Hopeful instrumental with guitar being the lead and tabla used for percussion in the middle giving a feeling of going somewhere with positive outlook."
+            ],
+            [
+                "A string ensemble opens the track with legato, melancholic melodies. The violins and violas play beautifully, while the cellos and bass provide harmonic support for the moving passages. The overall feel is deeply melancholic, with an emotionally stirring performance that remains harmonious and a sense of clearness."
+            ],
+            [
+                "An exceptionally harmonious string performance with a lively tempo in the first half, transitioning to a gentle and beautiful melody in the second half. It creates a warm and comforting atmosphere, featuring cellos and bass providing a solid foundation, while violins and violas showcase the main theme, all without any noise, resulting in a cohesive and serene sound."
+            ],
+            [
+                "Pop solo piano instrumental song. Simple harmony and emotional theme. Makes you feel nostalgic and wanting a cup of warm tea sitting on the couch while holding the person you love."
+            ],
+            [
+                "A whimsical string arrangement with rich layers, featuring violins as the main melody, accompanied by violas and cellos. The light, playful melody blends harmoniously, creating a sense of clarity."
+            ],
+            [
+                "An instrumental piece primarily featuring acoustic guitar, with a lively and nimble feel. The melody is bright, delivering an overall sense of joy."
+            ],
+            [
+                "A joyful saxophone performance that is smooth and cohesive, accompanied by cello. The first half features a relaxed tempo, while the second half picks up with an upbeat rhythm, creating a lively and energetic atmosphere. The overall sound is harmonious and clear, evoking feelings of happiness and vitality."
+            ],
+            [
+                "A cheerful piano performance with a smooth and flowing rhythm, evoking feelings of joy and vitality."
+            ],
+            [
+                "An instrumental piece primarily featuring piano, with a lively rhythm and cheerful melodies that evoke a sense of joyful childhood playfulness. The melodies are clear and bright."
+            ],
+            [
+                "fast and fun beat-based indie pop to set a protagonist-gets-good-at-x movie montage to."
+            ],
+            [
+                "A lively 70s style British pop song featuring drums, electric guitars, and synth violin. The instruments blend harmoniously, creating a dynamic, clean sound without any noise or clutter."
+            ],
+            [
+                "A soothing acoustic guitar song that evokes nostalgia, featuring intricate fingerpicking. The melody is both sacred and mysterious, with a rich texture."
+            ]
+        ]
+    },
+    "score_melody": 0.7874709808473592
+}

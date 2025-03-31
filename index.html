@@ -754,6 +754,16 @@
                     </tbody>
                 </table>
                 <table class="table table-sum text-center" style="vertical-align; middle;">
+                    <div class="section text-justify">
+                        <h1>Updated Melody-conditioned Comparison</h1>
+                        <p class="pr-5 pl-5 text-justify">
+                            The updated melody-conditioned comparison includes four baselines: Stable-audio ControlNet, MusicGen-stereo-Large
+                            , Ours (v1), and Ours (v2). Ours (v1) uses a one-hot 12-pitch-class chromagram as the condition, the same as
+                             MusicGen, which both the reviewers and we found to be perceptually poor. In contrast, Ours (v2) uses a top-4 
+                             128-pitch-class CQT as the condition, the same as Stable-audio ControlNet, which sounds preferable. The Original 
+                             Stable-audio, which is our pretrained-backbone, is to show that the models ability before manipulating its structure.
+                             For example, our work didn't focus on enhancing text adherence, so the pretrained backbone is our upper-bound.
+                            </p>
                     <tbody>
                         <tr>
                             <td colspan="24">

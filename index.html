@@ -756,14 +756,24 @@
                 <table class="table table-sum text-center" style="vertical-align; middle;">
                     <div class="section text-justify">
                         <h1>Updated Melody-conditioned Comparison</h1>
-                        <p class="pr-5 pl-5 text-justify">
-                            The updated melody-conditioned comparison includes four baselines: Stable-audio ControlNet, MusicGen-stereo-Large
-                            , Ours (v1), and Ours (v2). Ours (v1) uses a one-hot 12-pitch-class chromagram as the condition, the same as
-                             MusicGen, which both the reviewers and we found to be perceptually poor. In contrast, Ours (v2) uses a top-4 
-                             128-pitch-class CQT as the condition, the same as Stable-audio ControlNet, which sounds preferable. The Original 
-                             Stable-audio, which is our pretrained-backbone, is to show that the models ability before manipulating its structure.
-                             For example, our work didn't focus on enhancing text adherence, so the pretrained backbone is our upper-bound.
-                            </p>
+                        <section class="pr-5 pl-5 text-justify">
+                            <h2>Melody-Conditioned Comparison</h2>
+                            <p>The updated melody-conditioned comparison includes four baselines:</p>
+                            <ul>
+                              <li><strong>Stable-audio ControlNet</strong></li>
+                              <li><strong>MusicGen-stereo-Large</strong></li>
+                              <li><strong>Ours (v1)</strong></li>
+                              <li><strong>Ours (v2)</strong></li>
+                            </ul>
+                            
+                            <h3>Details on Each Baseline</h3>
+                            <p><strong>Ours (v1):</strong> Uses a one-hot 12-pitch-class chromagram as the condition, the same as MusicGen, which both the reviewers and we found to be perceptually poor.</p>
+                            
+                            <p><strong>Ours (v2):</strong> Uses a top-4 128-pitch-class CQT as the condition, the same as Stable-audio ControlNet, which sounds preferable.</p>
+                            
+                            <p><strong>Pretrained Backbone (Original Stable-audio):</strong> Shows the model's ability before any structural manipulation. Since our work did not focus on enhancing text adherence, this pretrained backbone serves as our upper-bound.</p>
+                          </section>
+                          
                     <tbody>
                         <tr>
                             <td colspan="24">

@@ -1,0 +1,77 @@
+{
+    "config": {
+        "condition_type": [
+            "melody_stereo"
+        ],
+        "output_dir": "./generated_audio/test32",
+        "GPU_id": "0",
+        "apadapter": true,
+        "ap_scale": 1.0,
+        "guidance_scale_text": 7.0,
+        "guidance_scale_con": 1.0,
+        "guidance_scale_audio": 0.5,
+        "denoise_step": 50,
+        "sigma_min": 0.3,
+        "sigma_max": 500,
+        "weight_dtype": "fp32",
+        "negative_text_prompt": "Low qualiy, noise",
+        "audio_mask_start_seconds": 24,
+        "audio_mask_end_seconds": 50,
+        "musical_attribute_mask_start_seconds": 0,
+        "musical_attribute_mask_end_seconds": 0,
+        "buffer_seconds": 3,
+        "no_text": false,
+        "show_result_and_plt": false,
+        "audio_files": [
+            "/home/fundwotsai/MuseControlLite/melody_condition_audio _demo/1_49_piano.mp3",
+            "/home/fundwotsai/MuseControlLite/melody_condition_audio _demo/1_49_piano.mp3",
+            "/home/fundwotsai/MuseControlLite/melody_condition_audio _demo/1_49_piano.mp3",
+            "/home/fundwotsai/MuseControlLite/melody_condition_audio _demo/2_322_piano.mp3",
+            "/home/fundwotsai/MuseControlLite/melody_condition_audio _demo/2_322_piano.mp3",
+            "/home/fundwotsai/MuseControlLite/melody_condition_audio _demo/2_322_piano.mp3",
+            "/home/fundwotsai/MuseControlLite/melody_condition_audio _demo/3_610_bass.mp3",
+            "/home/fundwotsai/MuseControlLite/melody_condition_audio _demo/3_610_bass.mp3",
+            "/home/fundwotsai/MuseControlLite/melody_condition_audio _demo/4_785_piano.mp3",
+            "/home/fundwotsai/MuseControlLite/melody_condition_audio _demo/4_785_piano.mp3",
+            "/home/fundwotsai/MuseControlLite/melody_condition_audio _demo/5_933_string.mp3",
+            "/home/fundwotsai/MuseControlLite/melody_condition_audio _demo/5_933_string.mp3",
+            "/home/fundwotsai/MuseControlLite/melody_condition_audio _demo/6_uke_12.wav",
+            "/home/fundwotsai/MuseControlLite/melody_condition_audio _demo/6_uke_12.wav",
+            "/home/fundwotsai/MuseControlLite/melody_condition_audio _demo/7_57_jazz.mp3",
+            "/home/fundwotsai/MuseControlLite/melody_condition_audio _demo/8_703_mideast.mp3"
+        ],
+        "text": [
+            "A heartfelt, warm acoustic guitar performance, evoking a sense of tenderness and deep emotion, with a melody that truly resonates and touches the heart.",
+            "A vibrant MIDI electronic composition with a hopeful and optimistic vibe.",
+            "This track composed of electronic instruments gives a sense of opening and clearness.",
+            "This track composed of electronic instruments gives a sense of opening and clearness.",
+            "Hopeful instrumental with guitar being the lead and tabla used for percussion in the middle giving a feeling of going somewhere with positive outlook.",
+            "A string ensemble opens the track with legato, melancholic melodies. The violins and violas play beautifully, while the cellos and bass provide harmonic support for the moving passages. The overall feel is deeply melancholic, with an emotionally stirring performance that remains harmonious and a sense of clearness.",
+            "An exceptionally harmonious string performance with a lively tempo in the first half, transitioning to a gentle and beautiful melody in the second half. It creates a warm and comforting atmosphere, featuring cellos and bass providing a solid foundation, while violins and violas showcase the main theme, all without any noise, resulting in a cohesive and serene sound.",
+            "Pop solo piano instrumental song. Simple harmony and emotional theme. Makes you feel nostalgic and wanting a cup of warm tea sitting on the couch while holding the person you love.",
+            "A whimsical string arrangement with rich layers, featuring violins as the main melody, accompanied by violas and cellos. The light, playful melody blends harmoniously, creating a sense of clarity.",
+            "An instrumental piece primarily featuring acoustic guitar, with a lively and nimble feel. The melody is bright, delivering an overall sense of joy.",
+            "A joyful saxophone performance that is smooth and cohesive, accompanied by cello. The first half features a relaxed tempo, while the second half picks up with an upbeat rhythm, creating a lively and energetic atmosphere. The overall sound is harmonious and clear, evoking feelings of happiness and vitality.",
+            "A cheerful piano performance with a smooth and flowing rhythm, evoking feelings of joy and vitality.",
+            "An instrumental piece primarily featuring piano, with a lively rhythm and cheerful melodies that evoke a sense of joyful childhood playfulness. The melodies are clear and bright.",
+            "fast and fun beat-based indie pop to set a protagonist-gets-good-at-x movie montage to.",
+            "A lively 70s style British pop song featuring drums, electric guitars, and synth violin. The instruments blend harmoniously, creating a dynamic, clean sound without any noise or clutter.",
+            "A soothing acoustic guitar song that evokes nostalgia, featuring intricate fingerpicking. The melody is both sacred and mysterious, with a rich texture."
+        ],
+        "transformer_ckpt_musical": "./checkpoints/woSDD-all/model_3.safetensors",
+        "extractor_ckpt_musical": {
+            "dynamics": "./checkpoints/woSDD-all/model_1.safetensors",
+            "melody": "./checkpoints/woSDD-all/model.safetensors",
+            "rhythm": "./checkpoints/woSDD-all/model_2.safetensors"
+        },
+        "audio_transformer_ckpt": "./checkpoints/70000_Audio/model.safetensors",
+        "transformer_ckpt_melody_stero": "./checkpoints/70000_Melody_stereo/model_1.safetensors",
+        "extractor_ckpt_melody_stero": {
+            "melody": "./checkpoints/70000_Melody_stereo/model.safetensors"
+        },
+        "transformer_ckpt_melody_mono": "./checkpoints/40000_Melody_mono/model_1.safetensors",
+        "extractor_ckpt_melody_mono": {
+            "melody": "./checkpoints/40000_Melody_mono/model.safetensors"
+        }
+    }
+}

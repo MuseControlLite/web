@@ -1,0 +1,30 @@
+C major, country music backing track
+gen_file: C
+C major, joyful rock band
+gen_file: C
+C major, jazzy piano, with an exciting vibe, trumpet, drums
+gen_file: C
+C major, metal band in a ballroom
+gen_file: C
+C major, reggae style
+gen_file: C
+C major, Uplifting orchestral background with light strings, piano arpeggios, and a hopeful mood.
+gen_file: C
+C major, mellow acoustic folk with guitar, banjo, and light percussion
+gen_file: C
+C major, energetic pop rock with electric guitars, bass, and upbeat drums
+gen_file: C
+C major, smooth jazz combo with saxophone, piano, upright bass, and brushes
+gen_file: C
+C major, cinematic orchestral score with soaring strings, brass swells, and uplifting percussion
+gen_file: Cm
+C major, funky groove with slap bass, electric piano, and tight drumbeat
+gen_file: D♯
+C major, lively salsa with piano montuno, congas, and trumpet section
+gen_file: C
+C major, dreamy ambient soundscape with synth pads, soft piano, and airy textures
+gen_file: C
+C major, bluesy shuffle with harmonica, electric guitar riffs, and walking bass
+gen_file: C
+C major, epic trailer music with pounding drums, choir, and brass fanfare
+gen_file: Cm

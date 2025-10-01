@@ -1,73 +1,28 @@
 <html>
 
 <head>
-    <title>MuseControlLite: Multifunctional Music Generation with Lightweight Conditioners</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-<meta name="theme-color" content="#563d7c">
-<link rel="stylesheet" href="styles.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
-<style>
-    table {
-        width: 100%;
-        border-collapse: collapse;
-        margin: 20px 0;
+  <meta charset="utf-8" />
+  <title>MuseControlLite: Multifunctional Music Generation with Lightweight Conditioners</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#563d7c">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
+  <style>
+    /* Make audio players shrink to their cells */
+    audio { width: 100%; max-width: 100%; }
+
+    /* Optional: smaller table padding on small screens */
+    @media (max-width: 576px) {
+      .table td, .table th { padding: .5rem; }
     }
 
-    td {
-        border: 1px solid #ccc;
-        padding: 10px;
-        text-align: center;
-    }
-</style>
+    /* Tidy page spacing */
+    body { background-color:#fff; color:#000; }
+    .page-header { margin-top: 1.5rem; }
+  </style>
 </head>
-
-<body bgcolor="#FFFFFF" link="#000000" vlink="#000000" alink="#000000">
-
-<div class="text-center">
-    <br>
-    <div class="text-wrap" width="200px">
-    <font face="helvetica , ariel, &#39;sans serif&#39;" size="6">
-        <b>MuseControlLite:</br> </b><br><br>
-    </font>
-    </div>
-
-    <p style="font-size: 1.3em; margin-bottom: 0;">
-        <a href="https://fundwotsai2001.github.io/mywebsite/"> Fang-Duo Tsai<sup>1</sup> </a>&nbsp;
-        <a href="https://slseanwu.github.io/"> Shih-Lun Wu<sup>2</sup> </a>&nbsp;
-        Weijaw Lee <sup>1</sup></a> &nbsp;
-        Sheng-Ping Yang <sup>1</sup></a> &nbsp;
-        Bo-Rui Chen <sup>1</sup></a> &nbsp;
-        <a href="http://www.hao-chung.info/"> Hao-Chung Cheng<sup>1</sup></a> &nbsp;
-        <a href="https://affige.github.io/"> Yi-Hsuan Yang<sup>1</sup></a> &nbsp;
-    </p> 
-    <p style="margin-top: 0;">
-        <sup>1</sup>National Taiwan University<br>
-        <sup>2</sup>Massachusetts Institute of Technology<br>
-    </p>
-
-    <div class="m-5">
-        <a class="btn btn-outline-dark" href="https://www.arxiv.org/abs/2506.18729" type="button"><i
-                class="bi bi-newspaper"></i> Paper</a>
-        <a class="btn btn-outline-dark" href="https://github.com/fundwotsai2001/MuseControlLite" type="button">
-            <i class="bi bi-github"></i> GitHub
-        </a>
-        <a
-            class="btn btn-outline-dark"
-            href="https://colab.research.google.com/drive/1rR-Ncng_gSeb6hX0LY20SA4O9RCF-ZF3"
-            target="_blank"
-            rel="noopener"
-            type="button"
-        >
-            <img
-            src="https://colab.research.google.com/img/colab_favicon_256px.png"
-            alt="Colab"
-            style="width:1em; height:1em; margin-right:0.25em; vertical-align:middle;"
-            >
-            Colab
-        </a>
-    </div>
-
     <div class="section text-justify">
         <h1>Updated (2026/9/2) Singing Accompaniment Generation</h1>
         <section class="pr-5 pl-5 text-justify">
